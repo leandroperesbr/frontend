@@ -1,0 +1,9 @@
+h2 Lista de produtos
+hr
+a(href='/produtos/add') Criar produto
+hr
+
+ul
+	each produto in produtos
+		li
+			a(href='/produtos/view/#{produto.idt_product}') #{produto.nome}
